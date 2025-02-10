@@ -5,6 +5,7 @@ import os
 class ChatBot_Gen_One:
 
   command_end = ['stop', 'quit', 'end', 'exit']
+
   regex_action = [{'r': r"Ich brauche (.*)",
                    'a': ["Warum brauchst du {0}?",
                         "Würde {0} dir denn wirklich helfen?",
@@ -15,7 +16,7 @@ class ChatBot_Gen_One:
                          "Was erhoffst du dir von {0}?",
                          "Gibt es einen bestimmten Grund, warum du {0} willst?"]
                   },
-                  {'r': r"[Mm]ein (.*) (.*)",
+                  {'r': r"[Mm]ein[ ](?) (.*)",
                    'a': ["Warum denkst Du, dass dein {0}?",
                          "Wie beeinflusst dein {0}  dein Leben?",
                          "Hast du mit jemandem daüber gesprochen, dass dein {0} ?"]
@@ -27,6 +28,7 @@ class ChatBot_Gen_One:
                   },
                   {'r': r"Kannst du (.*)?", 
                    'a': ["Ich kann {0} gerne versuchen!",
+                         "Gemäß der Intergalaktischen Direktive darf ich nicht {0} "
                          "Das kann ich leider nicht machen!",
                          "Kannst du nicht selbst {0}?"]
                   },
@@ -34,6 +36,13 @@ class ChatBot_Gen_One:
                     'a': ["Danke. Mir geht es gut und dir?",
                           "Sehr gut, danke. Und wie läuft's bei dir?",
                           "Ich kann nicht klagen. Was ist mit dir?"]
+                  },
+                  {'r': r"[Ee]rzaehle mir (?:einen|einen weiteren) Witz",
+                    'a':["Natürlich! Hier ist ein Witz für dich: Warum hat der Kühlschrank den Laptop nicht bezahlt? Weil er schon eine eigene Rechnung hatte!",
+                          "Klar, hier ist einer: Was macht ein Clown im Büro? Faxen!",
+                          "Warum hat der Mathematiker eine Brille? Weil er mit Zahlen jongliert!",
+                          "Was ist grün und läuft durch den Wald? Eine Rudel Gurken!"]
+
                   },
                   {'r': r"Erzaehle mir von (.*)",
                    'a': ["Gerne erzähle ich dir mehr über {0}. Was interessiert dich daran?",

@@ -39,6 +39,7 @@ class ChatBot:
     def split_words(self, sentence: str): 
         # Ich heisse nämlich Sven -> ['ich',  'heisse', 'Sven', 'nämlich' ]
         tmp = sentence.split()
+        
         self.clean(tmp)
         self.is_known(tmp)
         print(tmp)
