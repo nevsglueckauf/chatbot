@@ -103,7 +103,11 @@ class ChatBot_Gen_One:
       phrase = input('User::')
       self.read(phrase)
       
+  def read_file(self):
+    pass
 
+  def write_line(self, line):
+    pass
     
 v = ChatBot_Gen_One('ChatBot 2025')
 v.run()

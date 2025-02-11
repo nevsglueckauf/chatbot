@@ -1,4 +1,15 @@
+# nl = '\n'
+# datei = open('chat.txt','a')
+# datei.write('Neue Zeile blubb' + nl)
+
+datei = open('chat.txt', 'r')
+alles = datei.readline()
+
+print(alles,end='::')
+alles = datei.readline()
+print(alles,end='::')
 
 
-# VS Code Ext. Markdown Preview Mermaid Supportldkgö jpg#reJHITje h#pJHTEP 'HJO RBTBQREZNZZ j  hh jkh# VS Code Ext. Markdown Preview Mermaid Supportldkgö jpg#reJHITje h#pJHTEP 'HJO RBTBQREZNZZ j  hh jkh# VS Code Ext. Markdown Preview Mermaid Supportldkgö jpg#reJHITje h#pJHTEP 'HJO RBTBQREZNZZ j  hh jkh# VS Code Ext. Markdown Preview Mermaid Supportldkgö jpg#reJHITje h#pJHTEP 'HJO RBTBQREZNZZ j  hh jkh# VS Code Ext. Markdown Preview Mermaid Supportldkgö jpg#reJHITje h#pJHTEP 'HJO RBTBQREZNZZ j  hh jkh
-pet ätjh#phjpÄ
+# Was willst Du tun?
+# r - lies protokoll
+# w - schreibe protokoll
