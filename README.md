@@ -7,9 +7,6 @@ Möglichst viele bisher behandelte Aspekte von Python wiederholen
 
 - Klassen definieren und Objekte nutzen
 - RegEx (reguläre Ausdrücke ) - Erkennen von Mustern in Texten (zunächst nur deutsch)
-
-
-
 - Verzicht auf alle Erweiterungen, die nicht zur <b>Python Standard Library</b> gehören
 
 ## Programmablauf
@@ -37,6 +34,5 @@ sequenceDiagram
     User--x Bot: Hallo bot, wie geht es Dir?
     Bot ->> User: Sehr gut, danke. Und wie läuft es bei dir?
     User-->Bot: Mir geht es gut, danke!
-    
     
 ```
