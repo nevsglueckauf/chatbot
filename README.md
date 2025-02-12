@@ -1,15 +1,29 @@
 # Mustererkennung / Reg. Ausdr.
 Projektarbeit Python 2025-I
 
-Ziele: möglichst viele bisher behandelte Aspekte von Python wiederholen
+## Ziele: 
+
+Möglichst viele bisher behandelte Aspekte von Python wiederholen
 
 - Klassen definieren und Objekte nutzen
 - RegEx (reguläre Ausdrücke ) - Erkennen von Mustern in der Grammatik
 
---> REguläre Ausdrücke erklären
 
-- Verzicht auf alle Erweiterungen, die nicht zur Python Standard Library gehören
 
+- Verzicht auf alle Erweiterungen, die nicht zur <b>Python Standard Library</b> gehören
+
+## Programmablauf
+
+```mermaid
+
+sequenceDiagram
+    Bot->User: Welcome message
+    loop until 'quit'
+        Bot-->User: message
+        User-->Bot: message
+    end
+
+```
 
 
 
