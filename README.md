@@ -6,7 +6,7 @@ Projektarbeit Python 2025-I
 Möglichst viele bisher behandelte Aspekte von Python wiederholen
 
 - Klassen definieren und Objekte nutzen
-- RegEx (reguläre Ausdrücke ) - Erkennen von Mustern in der Grammatik
+- RegEx (reguläre Ausdrücke ) - Erkennen von Mustern in Texten (zunächst nur deutsch)
 
 
 
