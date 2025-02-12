@@ -1,7 +1,0 @@
-|Wie geht es Dir?
-Danke. Mir geht es gut und dir?
-|Mein Pferd kotzt
-Hast du mit jemandem daüber gesprochen, dass dein Pferd kotzt ?
-|Mein Freund ist gestorben
-Wie beeinflusst dein Freund ist gestorben  dein Leben?
-
