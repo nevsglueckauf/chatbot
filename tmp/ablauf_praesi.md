@@ -7,14 +7,14 @@
 - Zielgruppe: wer profitiert von Bot?
     - wir als Gruppe
     - Kurs 
-## 2 Technische Details
-- verwendete Bibliotheken
+## 2 Technische Details (Andrei)
+- verwendete Bibliotheken (re, random)
 - reguläre Ausdrücke: kurze Erklärung. wie verwendet, um Benutzeranfragen zu analysieren
 - Antwortlogik: Reaktion auf Schlüsselwörter/Sätze, die Benutzer eingibt
 
 ## 3 . Live-Demo (Nadja)
     - "Drehbuch" 
-
+    - Floskel-Sammlung
 ## 4 . Erklärung Quellcode in Python (Sven)
 
 ## 5 Ausblick (Manuel)

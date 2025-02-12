@@ -3,41 +3,14 @@ import random
 
 
 class ChatBot_Gen_One:
-  # Kommando(s) zum Verlassen
+
   command_end = ['quit']
   
   welcome = 'Guten Tag, ich heisse'
-  
-  def __init__(self, name = 'Dr. Seltsam'):
-    """ Initialisiere Objekt """
-    print(self.welcome, name)
-    self.run()
 
+  user_name = 'Nadja'
+  au =  r' [ich heisse | mein Name ist] (.*)'
 
-  def run(self):
-    """ Main loop """
-    phrase = ''
-    while not phrase.lower() in self.command_end:
-      phrase = input('User: ')
-      self.analyze(phrase)
-
-
-  def analyze(self, user_input):
-    """ Analyse der Eingabe des Users """
-    for item in self.regex_action:
-      
-      
-      regex = re.compile(item['regex'], re.I)
-      mtc = regex.search(user_input)
-      
-      if mtc:
-          text = ' '.join(mtc.groups())
-          print('Bot:', item['answer'][random.randrange(0, len(item['answer']))].format(text))
-         
-          break
-    
-
-  # Regeln für die 'Konversation'    
   regex_action = [{'regex': r'Mir geht es nicht gut',
                  'answer': ['Es tut mir leid zu hören, dass es dir nicht gut geht. Möchtest du darüber sprechen?',
                             'Wenn du irgendetwas brauchst oder ich dir helfen kann, lass es mich wissen.',
@@ -78,6 +51,11 @@ class ChatBot_Gen_One:
                               'Was erhoffst du dir von {0}?',
                               'Gibt es einen bestimmten Grund, warum du {0} willst?']
                   },
+                  #{'regex': r'[Mm]ein(.*) (.*)',
+                   #'answer': ['Warum denkst Du, dass dein{0}?',
+                              #'Wie beeinflusst es dein Leben, dass dein{0}?',
+                              #'Hast du mit jemandem daüber gesprochen, dass dein{0}?']
+                  #},
                   {'regex': r'Ich wünsche mir (.*)',
                    'answer': ['Warum wünschst du dir {0}?',
                          'Würde {0} dir denn wirklich helfen?',
@@ -125,5 +103,36 @@ class ChatBot_Gen_One:
                               'Magst Du das bitte anders formulieren?',
                               'Ach komm - es ist auch für mich spät']
                   }]
+  
+  def __init__(self, name = 'Dr. Seltsam'):
+    print(self.welcome, name, ' Wie ist dein Name?')
+  
 
+  def read(self, user_input):
+    for item in self.regex_action:
+      answer_given = False
+      
+      #regex = re.compile(item['regex'], re.I)
+      #mtc = re.search(item['regex'], user_input, re.I)
+      
+      regex = re.compile(item['regex'], re.I)
+      mtc = regex.search(user_input)
+      
+      if mtc:
+          text = ' '.join(mtc.groups())
+          print('Bot:', item['answer'][random.randrange(0, len(item['answer']))].format(text))
+          answer_given = True
+          break
+      
+  
+    
+    
+
+  def run(self):
+    phrase = ''
+    while not phrase.lower() in self.command_end:
+      phrase = input('User: ')
+      self.read(phrase)
+      
 v = ChatBot_Gen_One('ChatBot 2025.')
+v.run()
