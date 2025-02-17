@@ -1,5 +1,6 @@
-# Mustererkennung / Reg. Ausdr.
+# Mustererkennung / Reguläre Ausdrücke
 Projektarbeit Python 2025-I
+Diese Dokumentation ist (auf Gruppenwunsch) in Deutscher Sprache verfasst
 
 ## Ziele: 
 
@@ -21,8 +22,16 @@ sequenceDiagram
     end
 
 ```
+## Benutzung 
 
-
+### Unix/Mac/Linux/Solaris ...
+<pre>
+<code>
+foo@ASGARD chatbot % python 3 chat_bot.py
+Guten Tag, ich heisse ChatBot 2025.  Wie ist dein Name?
+User:
+</code>
+</pre>
 
 ## Beispiel-Dialog
 
