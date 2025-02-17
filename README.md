@@ -27,7 +27,7 @@ sequenceDiagram
 ### Unix/Mac/Linux/Solaris ...
 <pre>
 <code>
-foo@ASGARD chatbot % python 3 chat_bot.py
+foo@ASGARD chatbot % python3 chat_bot.py
 Guten Tag, ich heisse ChatBot 2025.  Wie ist dein Name?
 User:
 </code>
